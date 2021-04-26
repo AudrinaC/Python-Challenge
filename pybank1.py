@@ -69,12 +69,22 @@ Greatest Profit Decrease: {min_month} {min_profit:.2f}""")
 
 print (financial_analysis) 
 
+# adding text file
+
+analysis = open('financial_analysis.txt', 'w')
+
+analysis.write('Financial Analysis\n')
+analysis.write('----------------------------------\n')
+analysis.write(f'Total Months: {total_months}\n')
+analysis.write(f'Total: ${net_amount:.2f}\n')
+analysis.write(f'Average Change: {avg_change:.2f}\n')
+analysis.write(f'Greatest Increase in Profits: {max_month} {max_profit:.2f}\n')
+analysis.write(f'Greatest Decrease in Profits: {min_month} {min_profit:.2f}\n')
+analysis.write(financial_analysis)
 
 
 
  
-
-
 
 
 
